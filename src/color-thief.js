@@ -24,7 +24,7 @@
   It also simplifies some of the canvas context manipulation
   with a set of helper functions.
 */
-var CanvasImage = function (image) {
+const CanvasImage = function (image) {
     this.canvas  = document.createElement('canvas');
     this.context = this.canvas.getContext('2d');
 
@@ -57,7 +57,7 @@ CanvasImage.prototype.removeCanvas = function () {
 };
 
 
-var ColorThief = function () {};
+const ColorThief = function () {};
 
 /*
  * getColor(sourceImage[, quality])
@@ -655,3 +655,5 @@ var MMCQ = (function() {
         quantize: quantize
     };
 })();
+
+export default ColorThief;
