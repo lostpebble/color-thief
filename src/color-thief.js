@@ -656,4 +656,4 @@ var MMCQ = (function() {
     };
 })();
 
-export default ColorThief;
+module.exports = colorThief;
